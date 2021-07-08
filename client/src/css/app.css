@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    -webkit-font-smoothing: antialiased;
+
+    background-color: #fff;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+.container {
+   width: 100%;
+   max-width: 1850px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.card__list {
+   margin: 100px 0 70px;
+   display: flex;
+}
+
+.card__inner {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -15px;
+}
+
+.card__item {
+   width: 25%;
+   padding: 0 15px;
+   margin-bottom: 30px;
+   text-align: center;
+}
+button{
+   outline: none;
+   border: none;
+   background-color: transparent;
+}
+
+.card {
+   margin: 5px;
+   border: 1px solid;
+   border-color: rgba(108, 114, 121, .4);;
+   border-radius: 8px;
+   padding: 10px;
+}
+
+.card__img {
+   height: 300px;
+   overflow: hidden;
+   margin-bottom: 10px;
+}
+
+.card__photo {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+.card__name {
+   margin-bottom: 8px;
+   font-size: 23px;
+   color: #2d3033;
+}
+
+.card__description {
+   margin-bottom: 8px;
+
+   font-size: 16px;
+   color: #2d3033;
+
+}
+
+.card__author{
+   margin-bottom: 14px;
+   font-size: 14px;
+   font-weight: 400;
+   color: #2d3033;
+}
+
+.card__author span{
+   margin-bottom: 13px;
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: 400;
+   color: rgba(232, 69, 69, .9);
+}
+
+.team__text {
+   margin-bottom: 20px;
+   font-size: 14px;
+   line-height: 1.5;
+   color: #6c7279;
+}
+
+
+li{
+   background-color: rgba(230, 235, 250, 1);
+   color: black;
+   border-radius: 10px;
+   font-size: 15px;
+   padding: 10px;
+   list-style-type: none;
+   margin-left: -32px;
+}
+li span{
+   font-size: 15px;
+   font-weight: 400;
+   color: red;
+}
+
+.comment__list {
+   height: auto;
+   text-align: left;
+   max-height: 350px;
+   overflow-y: scroll;
+}
+
+.comment__card {
+   padding: 20px;
+   margin-bottom: 30px;
+   text-align: center;
+   margin: auto;
+   display: block;
+   width: 35%;
+   border: 1px solid;
+   border-color: rgba(108, 114, 121, .4);;
+   border-radius: 8px;
+
+}
+
+.comment__card--img{
+   height: 450px;
+   overflow: hidden;
+   margin-bottom: 10px;
+}
+
+.comment__card--photo{
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+.personal__area--title{
+   margin-top: 150px;
+   margin-bottom: 20px;
+   text-align: center;
+   font-size: 24px;
+   color: #2d3033;
+}
+
+.card__name--edit {
+   text-align: center;
+   margin-bottom: 8px;
+   font-size: 23px;
+   color: #2d3033;
+}
+
+.card__description--edit{
+   text-align: center;
+   margin-bottom: 8px;
+
+   font-size: 16px;
+   color: #2d3033;
+}
+
+.card__author--edit{
+   text-align: center;
+   margin-bottom: 14px;
+   font-size: 14px;
+   font-weight: 400;
+   color: #2d3033;
+}
+
+.card__author--edit span{
+   margin-bottom: 13px;
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: 400;
+   color: rgba(232, 69, 69, .9);
+}
+
+/* @media */
+
+@media (max-width: 1200px) {
+
+   /* Card */
+   .card__item {
+       width: 33.3333%;
+       text-align: center;
+   }
+
+   .card__photo {
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+}
+
+@media (max-width: 945px) {
+
+   /* Card */
+   .card__item {
+       width: 50%;
+       text-align: center;
+   }
+
+   .card__photo {
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+}
+
+
+@media (max-width: 767px) {
+   /* Card */
+   .card__list {
+       margin: 60px 0 30px;
+   }
+
+   .card__item {
+       width: 100%;
+   }
+}
+
