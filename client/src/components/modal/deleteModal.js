@@ -29,23 +29,15 @@ const DeleteModal = ({ show, onHide }) => {
          </Modal.Body>
 
          <Modal.Footer className="m-auto">
-            <Button
-               className="mr-4"
-               style={{ width: '70px' }}
-               variant="outline-primary"
-               onClick={onHide}
-            >
-               Нет
-            </Button>
+            <div className="button__edit--page">
+               <button className="button__edit" type="submit" onClick={onHide}>
+                  Нет
+               </button>
 
-            <Button
-               className="ml-4"
-               style={{ width: '70px' }}
-               variant="outline-danger"
-               onClick={del}
-            >
-               Да
-            </Button>
+               <button className="button__danger" type="submit" onClick={del}>
+                  Да
+               </button>
+            </div>
          </Modal.Footer>
       </Modal>
    );

@@ -40,6 +40,7 @@ p {
    display: flex;
    flex-wrap: wrap;
    margin: 0 -15px;
+   min-width: 100%;
 }
 
 .card__item {
@@ -48,11 +49,178 @@ p {
    margin-bottom: 30px;
    text-align: center;
 }
+
+.service__button{
+   display: flex;
+   justify-content: flex-end;
+}
+
 button{
    outline: none;
    border: none;
    background-color: transparent;
 }
+
+.button{
+   display: flex;
+   justify-content: flex-end;
+   
+}
+
+.button button {
+   border: 1px solid;
+   padding: 5px 25px;
+   border-radius: 40px;
+   border-color: rgba(108, 114, 121, .4);
+   background-color: #fff;
+   transition: .3s;
+   font-size: 15px;
+   font-weight: 400;
+   color: rgba(108, 114, 121, 1);
+}
+
+.button button:hover {
+   background-color: #007bff;
+   color: #fff;
+}
+
+.button__edit--page {
+   display: flex;
+   justify-content: space-between;
+}
+
+.button__edit {
+   width: 150px;
+   border: 1px solid;
+   padding: 5px 10px;
+   border-radius: 40px;
+   border-color: rgba(108, 114, 121, .4);
+   background-color: #fff;
+   transition: .3s;
+   margin-right: 5px;
+   font-size: 15px;
+   font-weight: 400;
+   color: rgba(108, 114, 121, 1);
+}
+
+.button__edit:hover {
+   background-color: #007bff;
+   color: #fff;
+}
+
+.button__danger {
+   width: 150px;
+   border: 1px solid;
+   padding: 5px 10px;
+   border-radius: 40px;
+   border-color: rgba(108, 114, 121, .4);
+   transition: .3s;
+   font-size: 15px;
+   font-weight: 400;
+   margin-left: 5px;
+   color: rgba(232, 60, 75, 1); 
+}
+
+.button__danger:hover {
+   background-color: rgba(232, 60, 75, 1);
+   color: #fff;
+}
+
+.button__danger--type{
+   width: 150px;
+   border: 1px solid;
+   padding: 5px 10px;
+   border-radius: 40px;
+   border-color: rgba(108, 114, 121, .4);
+   transition: .3s;
+   font-size: 15px;
+   font-weight: 400;
+   margin-right: 15px;
+   color: rgba(232, 60, 75, 1); 
+}
+
+.button__danger--type:hover {
+   background-color: rgba(232, 60, 75, 1);
+   color: #fff;
+}
+
+.button__edit--type{
+   width: 150px;
+   border: 1px solid;
+   padding: 5px 10px;
+   border-radius: 40px;
+   border-color: rgba(108, 114, 121, .4);
+   background-color: #fff;
+   transition: .3s;
+   margin-left: 15px;
+   font-size: 15px;
+   font-weight: 400;
+   color: rgba(108, 114, 121, 1);
+}
+
+.button__edit--type:hover {
+   background-color: #007bff;
+   color: #fff;
+}
+
+.personal__area--button {
+   width: 150px;
+   border: 1px solid;
+   padding: 5px 10px;
+   border-radius: 40px;
+   border-color: #fff;
+   background-color: #007bff;
+   transition: .3s;
+   margin-left: 15px;
+   font-size: 15px;
+   font-weight: 700;
+   color: #fff
+}
+
+.personal__area--button:hover {
+   background-color: #fff;
+   color: #007bff;
+}
+
+.back__button {
+   width: 150px;
+   border: 1px solid;
+   padding: 5px 10px;
+   border-radius: 40px;
+   border-color: #fff;
+   background-color: #007bff;
+   transition: .3s;
+   margin-left: 15px;
+   font-size: 15px;
+   font-weight: 700;
+   color: #fff;
+}
+
+.back__button:hover {
+   background-color: #fff;
+   color: #007bff;
+}
+
+.logout__button {
+   width: 150px;
+   border: 1px solid;
+   padding: 5px 10px;
+   border-radius: 40px;
+   border-color: #fff;
+   background-color: #007bff;
+   transition: .3s;
+   margin-left: 15px;
+   font-size: 15px;
+   font-weight: 700;
+   color: #fff;
+}
+
+.logout__button:hover {
+   background-color: #fff;
+   color: #007bff;
+}
+
+
 
 .card {
    margin: 5px;
@@ -111,7 +279,7 @@ button{
 }
 
 
-li{
+.comment__list li{
    background-color: rgba(230, 235, 250, 1);
    color: black;
    border-radius: 10px;
@@ -120,7 +288,7 @@ li{
    list-style-type: none;
    margin-left: -32px;
 }
-li span{
+.comment__list li span{
    font-size: 15px;
    font-weight: 400;
    color: red;
@@ -196,6 +364,32 @@ li span{
    font-weight: 400;
    color: rgba(232, 69, 69, .9);
 }
+
+.input__group {
+   align-items: center;
+}
+
+.pagination__list {
+   display: flex;
+   margin-bottom: 50px;
+}
+
+.pagination__list ul {
+   margin: auto;
+   display: flex;
+}
+
+.pagination__list li {
+   background-color: rgba(230, 235, 250, 1);
+   color: black;
+   border-radius: 12px;
+   font-size: 15px;
+   padding: 5px;
+   margin-left: 5px;
+   list-style-type: none;
+}
+
+
 
 /* @media */
 

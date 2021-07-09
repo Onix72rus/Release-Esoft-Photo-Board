@@ -28,7 +28,7 @@ const PersonalPictureItem = ({ picture }) => {
             <div className="card__author">
                Автор : <span>{picture.author}</span>
             </div>
-            <div className="d-flex justify-content-end">
+            <div className="service__button">
                <button
                   onClick={() => history.push(POST_ROUTE + '/' + picture.id)}
                >

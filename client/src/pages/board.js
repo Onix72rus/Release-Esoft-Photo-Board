@@ -25,13 +25,11 @@ const Board = observer(() => {
       });
    }, [pictureItem.selectedType]);
 
-   console.log(user);
-
    return (
       <Fragment>
          {user.isAuth === false && <Redirect to={LOGIN_ROUTE} />}
 
-         <div style={{ height: 120 }}></div>
+         <div style={{ height: 100 }}></div>
 
          <NavBar />
 

@@ -43,69 +43,63 @@ const PostItem = observer(() => {
          <div style={{ height: 120 }}></div>
          <Container fluid="sm">
             <Row>
-               <Col>
-                  <Card className="ml-2 m-auto" style={{ width: '45%' }}>
-                     <a href={process.env.REACT_APP_API_URL + picture.img}>
-                        <Card.Img
-                           className="img-responsive"
-                           variant="top"
-                           src={process.env.REACT_APP_API_URL + picture.img}
-                        />
-                     </a>
+               <Card className="ml-2 m-auto" style={{ width: '45%' }}>
+                  <a href={process.env.REACT_APP_API_URL + picture.img}>
+                     <Card.Img
+                        className="img-responsive"
+                        variant="top"
+                        src={process.env.REACT_APP_API_URL + picture.img}
+                     />
+                  </a>
 
-                     <Card.Body>
-                        <div className="card__name--edit">{picture.name}</div>
-                        <div className="card__description--edit">
-                           Описание : {picture.description}
-                        </div>
-                        <div className="card__author--edit">
-                           Автор : <span>{picture.author}</span>
-                        </div>
+                  <Card.Body>
+                     <div className="card__name--edit">{picture.name}</div>
+                     <div className="card__description--edit">
+                        Описание : {picture.description}
+                     </div>
+                     <div className="card__author--edit">
+                        Автор : <span>{picture.author}</span>
+                     </div>
 
-                        <Form.Control
-                           size="sm"
-                           type="text"
-                           placeholder="Введите название изображения"
-                           value={name}
-                           onChange={(event) => setName(event.target.value)}
-                        />
+                     <Form.Control
+                        size="sm"
+                        type="text"
+                        placeholder="Введите название изображения"
+                        value={name}
+                        onChange={(event) => setName(event.target.value)}
+                     />
 
-                        <br />
+                     <br />
 
-                        <Form.Control
-                           size="sm"
-                           type="text"
-                           placeholder="Введите описание изображения"
-                           value={description}
-                           onChange={(event) =>
-                              setDescription(event.target.value)
-                           }
-                        />
+                     <Form.Control
+                        size="sm"
+                        type="text"
+                        placeholder="Введите описание изображения"
+                        value={description}
+                        onChange={(event) => setDescription(event.target.value)}
+                     />
 
-                        <br />
+                     <br />
 
-                        <div className="d-flex justify-content-between">
-                           <Button
-                              size="sm"
-                              variant="outline-danger"
-                              style={{ width: '120px' }}
-                              onClick={() => setModalShow(true)}
-                           >
-                              Удалить
-                           </Button>{' '}
-                           <Button
-                              size="sm"
-                              className="d-flex align-items-end"
-                              variant="outline-primary"
-                              style={{ width: '120px' }}
-                              onClick={updateDescription}
-                           >
-                              Редактировать
-                           </Button>{' '}
-                        </div>
-                     </Card.Body>
-                  </Card>
-               </Col>
+                     <div className="button__edit--page">
+                        <button
+                           className="button__danger"
+                           type="submit"
+                           onClick={() => setModalShow(true)}
+                        >
+                           Удалить
+                        </button>
+
+                        <button
+                           className="button__edit"
+                           type="submit"
+                           onClick={updateDescription}
+                        >
+                           Редактировать
+                        </button>
+                     </div>
+                  </Card.Body>
+               </Card>
             </Row>
          </Container>
 

@@ -34,25 +34,23 @@ const CreateType = ({ show, onHide }) => {
          </Modal.Body>
 
          <Modal.Footer className="m-auto">
-            <Button
-               size="sm"
-               className="mr-4"
-               style={{ width: '100px' }}
-               variant="outline-primary"
-               onClick={onHide}
-            >
-               Закрыть
-            </Button>
+            <div className="button__edit--page">
+               <button
+                  className="button__danger--type"
+                  type="submit"
+                  onClick={onHide}
+               >
+                  Закрыть
+               </button>
 
-            <Button
-               size="sm"
-               className="ml-4"
-               style={{ width: '100px' }}
-               variant="outline-danger"
-               onClick={addType}
-            >
-               Добавить
-            </Button>
+               <button
+                  className="button__edit--type"
+                  type="submit"
+                  onClick={addType}
+               >
+                  Добавить
+               </button>
+            </div>
          </Modal.Footer>
       </Modal>
    );

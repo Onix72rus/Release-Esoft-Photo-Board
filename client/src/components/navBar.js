@@ -26,33 +26,24 @@ const NavBar = observer(() => {
             </Navbar.Brand>
 
             {isAdd ? (
-               <Button
-                  size="sm"
-                  className="mr-3"
-                  variant="outline-light"
+               <button
+                  className="personal__area--button"
                   onClick={() => history.push(PERSONAL_ROUTE)}
                >
                   Личный кабинет
-               </Button>
+               </button>
             ) : (
-               <Button
-                  size="sm"
-                  className="mr-3 ml-5"
-                  variant="outline-light"
+               <button
+                  className="back__button"
                   onClick={() => history.push(BOARD_ROUTE)}
                >
                   Назад
-               </Button>
+               </button>
             )}
 
-            <Button
-               size="sm"
-               className="ml-3 mr-4"
-               variant="outline-light"
-               onClick={() => logOut()}
-            >
+            <button className="logout__button" onClick={() => logOut()}>
                Выйти
-            </Button>
+            </button>
          </Navbar>
       </Fragment>
    );
